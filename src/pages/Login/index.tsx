@@ -1,15 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react';
-import { Box } from 'native-base';
+import React from 'react'
 
-const Home = () => {
+const Login = () => {
   return (
     <View>
-      <Box>hello world</Box>
+      <Text>Login</Text>
     </View>
   )
 }
 
-export default Home
+export default Login
 
 const styles = StyleSheet.create({})

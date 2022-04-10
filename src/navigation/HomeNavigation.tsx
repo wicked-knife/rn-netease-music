@@ -30,7 +30,7 @@ const HomeHeaderTitle = () => {
   );
 };
 
-export default function HomeTabs() {
+export default function HomeNavigation() {
   return (
     <Tab.Navigator
       screenOptions={{
