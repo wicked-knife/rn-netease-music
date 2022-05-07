@@ -1,22 +1,22 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { useSelector } from 'react-redux'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {useAppSelector} from '@store/hooks';
 
 const Login = () => {
-  const state = useSelector(state => state)
+  const {theme} = useAppSelector(state => state);
 
   return (
     <View style={styles.loginWrap}>
-      <Text>theme color: {state.theme.color}</Text>
+      <Text>theme color: {theme.color}</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
 
 const styles = StyleSheet.create({
   loginWrap: {
     backgroundColor: '#c20c0c',
-    flex: 1
-  }
-})
+    flex: 1,
+  },
+});
