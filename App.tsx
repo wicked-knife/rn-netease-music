@@ -4,9 +4,10 @@ import {NativeBaseProvider} from 'native-base';
 import StackNavigation from '@/navigation/StackNavigation';
 import {Provider} from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
+import codePush from 'react-native-code-push'
 import store from '@/store';
 
-export default function App() {
+const App = () => {
   useEffect(() => {
     SplashScreen.hide();
   }, []);
@@ -21,3 +22,5 @@ export default function App() {
     </Provider>
   );
 }
+
+export default codePush(App);
